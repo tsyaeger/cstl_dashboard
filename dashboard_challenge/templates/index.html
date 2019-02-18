@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="{{url_for('static',filename='styles/index.css')}}">
+	</head>
+	<body>
+		<div class='wrapper'>
+			<div class='header-container'><h1 class='header'>Castle Dashboard</h1></div>
+			<div class='graph-container'>
+				<div class="graph-img" id='test'><img src="../static/images/country_risk_heatmap.png" /></div>
+				<div class="graph-img"><img class="graph-img" src="{{url_for('static', filename='images/usregion_risk_heattest.png')}}"/></div>
+				<div class="graph-img"><img class="graph-img" src="{{url_for('static', filename='images/ts_risk_stackplot.png')}}"/></div>
+				<div class="graph-img"><img class="graph-img" src="{{url_for('static', filename='images/ts_state_stackplot.png')}}"/></div>
+			</div>
+		</div>
+	</body>
+</html>
